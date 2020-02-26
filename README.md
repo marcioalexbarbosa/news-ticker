@@ -10,7 +10,7 @@ O programa busca notícias das seguintes fontes:
 * G1
 * BBC
 * R7
-* TechMundo
+* Gizmodo
 
 São mostradas a duas primeiras notícias de cada fonte (total de 10 notícias).
 
