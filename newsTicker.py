@@ -3,12 +3,14 @@
 
 import feedparser
 import threading
+import random
 from datetime import datetime
 
 count = 0
 
 def fetchFirstSecond(feed):
   dict = feedparser.parse(feed)
+  random.shuffle(dict.entries)
   for post in dict.entries[:2]:
     print ("* " + post.title + " (" + post.links[0].href + ")")
 
