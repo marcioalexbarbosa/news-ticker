@@ -4,15 +4,21 @@
 import feedparser
 import threading
 
+count = 0
+
 def fetchFirstSecond(feed):
   dict = feedparser.parse(feed)
   for post in dict.entries[:2]:
     print ("* " + post.title + " (" + post.links[0].href + ")")
 
 def fetch():
+  global count
+  
   threading.Timer(1200.0, fetch).start()
 
-  print ("=" * 80)
+  count = count + 1
+
+  print (str(count) + ("=" * 80))
 
   fetchFirstSecond('http://rss.home.uol.com.br/index.xml')
 
