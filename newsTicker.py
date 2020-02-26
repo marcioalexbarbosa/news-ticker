@@ -3,6 +3,7 @@
 
 import feedparser
 import threading
+from datetime import datetime
 
 count = 0
 
@@ -18,7 +19,11 @@ def fetch():
 
   count = count + 1
 
-  print (str(count) + ("=" * 80))
+  now = datetime.now()
+
+  date_time = now.strftime("%d/%m/%Y, %H:%M:%S")
+
+  print (date_time + " - " + str(count) + " " + ("=" * 80))
 
   fetchFirstSecond('http://rss.home.uol.com.br/index.xml')
 
