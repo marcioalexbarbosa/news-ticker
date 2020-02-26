@@ -33,7 +33,7 @@ def fetch():
 
   fetchFirstSecond('https://noticias.r7.com/feed.xml')
 
-  fetchFirstSecond('https://rss.tecmundo.com.br/feed')
+  fetchFirstSecond('https://gizmodo.uol.com.br/feed/')
 
 fetch()
 
