@@ -9,7 +9,7 @@ O programa busca notícias das seguintes fontes:
 * Uol
 * G1
 * BBC
-* R7
+* MSN
 * Gizmodo
 
 São mostradas a duas primeiras notícias de cada fonte (total de 10 notícias).
