@@ -24,7 +24,7 @@ As notícias são atualizadas a cada 20 minutos.
 
 ### Executar
 
-`python news-ticker.py`
+`python newsTicker.py`
 
 ## Exemplo
 
