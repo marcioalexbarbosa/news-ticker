@@ -12,7 +12,7 @@ def fetchFirstSecond(feed):
   dict = feedparser.parse(feed)
   random.shuffle(dict.entries)
   for post in dict.entries[:2]:
-    print ("* " + post.title + " (" + post.links[0].href + ")")
+    print ("* " + post.title + " ( " + post.links[0].href + " )")
 
 def fetch():
   global count
